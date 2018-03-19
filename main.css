@@ -7,30 +7,23 @@ body, html {
 	background-color: #323232;
 }
 
-nav {
-	width: 100%;
-	display: inline-block;
-	background-color: #323232;
+.container-main {
+	height: 100vh;
+	display: table;
 }
 
-.nav-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.nav-list li {
-	float: left;
-}
-
-.nav-list li a {
-	padding: 1rem;
-	display: inline-block;
-	text-decoration: none;
-	color: #ccc;
-	font: 1.1em "Roboto Slab", sans-serif;
-}
-
-.nav-list li a:hover {
+.main {
 	color: #fff;
+	font: 5rem "Roboto Slab", sans-serif;
+	text-align: center;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main span {
+	text-shadow: 0 1px 4px #f00;
+	padding: 1rem 2rem;
+	border: 0.5rem solid #FFC107;
+	box-shadow: #FFC107;
 }
