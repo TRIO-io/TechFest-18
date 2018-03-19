@@ -6,6 +6,10 @@ body, html {
 	padding: 0;
 	background-color: #323232;
 }
+body {
+	background: url("back.jpg");
+	background-size: cover;
+}
 
 .container-main {
 	height: 100vh;
@@ -21,9 +25,40 @@ body, html {
 	vertical-align: middle;
 }
 
-.main span {
-	text-shadow: 0 1px 4px #f00;
+#main-span {
 	padding: 1rem 2rem;
+	display: inline-block;
 	border: 0.5rem solid #FFC107;
-	box-shadow: #FFC107;
+	text-shadow: 2px 2px 2px #3F51B5;
+}
+
+.main-span-side {
+	padding: 1rem 2rem;
+	display: inline-block;
+	color: #fff;
+	text-shadow: 2px 2px 2px #3F51B5;
+}
+
+.gs-btn {
+	font: 1.5rem "Roboto", sans-serif;
+	padding: 0.5rem 1rem;
+	margin: 2rem auto;
+	display: block;
+	width: 250px;
+	border: 4px solid #323232;
+	color: #323232;
+}
+
+.gs-btn:hover {
+	text-decoration: none;
+	border-color: #FF6F00;
+	color: #FF6F00;
+}
+
+.gs-btn:hover .move {
+	padding-left: 1rem;
+}
+
+.move {
+	transition: all .2s;
 }
