@@ -6,7 +6,7 @@ body, html {
 	padding: 0;
 }
 body {
-	background: url("back.jpg");
+	background: url("images/back.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -85,4 +85,44 @@ body {
 
 .gs-btn:hover .move {
 	padding-left: 2rem;
+}
+
+.page-footer {
+	background-color: #009688;
+}
+
+.flink {
+	color: #ddd;
+	border-bottom: 1px solid #eeeeee00;
+}
+
+.flink:hover {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.social {
+	font-size: 1.5em;
+	line-height: 1em;
+	color: #f1f1f1;
+	padding-left: 1rem;
+	transition: all .2s;
+	width: 45px;
+}
+
+.social:hover {
+	font-size: 1.7em;
+	line-height: 1em;
+}
+
+.facebook_link:hover {
+    color: #3B5998;
+}
+
+.insta_link:hover {
+    color: #125688;
+}
+
+.youtube_link:hover {
+    color: #C31A1E;
 }
