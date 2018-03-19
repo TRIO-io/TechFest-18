@@ -1,58 +1,36 @@
-body {
-    background: #000;
-    background-image: url(codeback.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-nav{
-    position: fixed;
-}
-.sec1{
-    height: 100vh;
-}
-.sec2{
-    height: 100vh;
-}
-.backs{
-    background-color: #fff;
-    height: 100%;
-    width: 100%;
-}
-.text{
-    /*background: black;*/
-    color: #fff;
-    display: table-cell;
-    position: absolute;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-}
-.text h1{
-    font-weight: lighter; 
-    word-spacing: 4px;
-    font-size: 6em; 
-    letter-spacing:3.1px;
-}
-.text p{
-    font-weight: 100; 
-    word-spacing: 4px;
-    font-size: 2em; 
-    letter-spacing:3.1px;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #323232;
 }
 
 nav {
-    background-color: #ffc107;
+	width: 100%;
+	display: inline-block;
+	background-color: #323232;
 }
 
-.main-text {
-    font: 4em "Roboto", "Slabo 27px", "Open Sans", sans-serif;
-    font-weight: 200;
-    color: #f1f1f1;
+.nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.main-text strong {
-    font-weight: 400;
-    color: #ffc107;
-    outline: 2px 2px #f1f1f1;
+.nav-list li {
+	float: left;
+}
+
+.nav-list li a {
+	padding: 1rem;
+	display: inline-block;
+	text-decoration: none;
+	color: #ccc;
+	font: 1.1em "Roboto Slab", sans-serif;
+}
+
+.nav-list li a:hover {
+	color: #fff;
 }
