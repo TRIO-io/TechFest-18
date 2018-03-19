@@ -4,28 +4,47 @@ body, html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #323232;
 }
 body {
 	background: url("back.jpg");
 	background-size: cover;
+	background-attachment: fixed;
+}
+
+.card {
+	display: inline-block;
+	float: left;
+}
+
+.card-action a {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.card-title {
+	font-size: 0.9em;
+	text-shadow: 1px 1px 2px #323232;
 }
 
 .container-main {
 	height: 100vh;
 	display: table;
+	border: 0 1px 0 1px #cccccc;
 }
 
 .main {
-	color: #fff;
-	font: 5rem "Roboto Slab", sans-serif;
 	text-align: center;
 	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
+	padding-bottom: 10rem;
 }
 
-#main-span {
+.main-span {
+	background-color: #f1f1f130;
+	font: 5rem "Roboto Slab", sans-serif;
+	color: #fff;
 	padding: 1rem 2rem;
 	display: inline-block;
 	border: 0.5rem solid #FFC107;
@@ -35,6 +54,7 @@ body {
 .main-span-side {
 	padding: 1rem 2rem;
 	display: inline-block;
+	font: 5rem "Roboto Slab", sans-serif;
 	color: #fff;
 	text-shadow: 2px 2px 2px #3F51B5;
 }
@@ -47,18 +67,22 @@ body {
 	width: 250px;
 	border: 4px solid #323232;
 	color: #323232;
+	transition: all .2s;
+	background-color: #f1f1f150;
 }
 
 .gs-btn:hover {
 	text-decoration: none;
 	border-color: #FF6F00;
+	background-color: #f1f1f180;
 	color: #FF6F00;
 }
 
-.gs-btn:hover .move {
+.move {
 	padding-left: 1rem;
+	transition: all .2s;
 }
 
-.move {
-	transition: all .2s;
+.gs-btn:hover .move {
+	padding-left: 2rem;
 }
