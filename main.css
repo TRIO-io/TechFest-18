@@ -150,3 +150,42 @@ body {
 .youtube_link:hover {
 	color: #C31A1E;
 }
+.con {
+	text-align: center;
+	margin-top: 8rem;
+	background: transparent;
+	text-shadow: 1px 1px 1px #323232;
+	padding-bottom: 3rem;
+}
+.con .main-span {
+	margin-top: 1rem;
+	padding: 1rem 2rem;
+	display: inline-block;
+	border: 0.5rem solid #FFC107;
+	text-shadow: 2px 2px 2px #3F51B5;
+}
+.con .content{
+	display: block;
+	text-align: left;
+	margin-top: 4rem;
+	font-size: 1.6em;
+	letter-spacing: 0.3rem;
+}
+.main .content{
+	display: block;
+	text-align: center;
+	margin-top: 4rem;
+	font-size: 1.6em;
+	letter-spacing: 0.3rem;
+}
+.content img{
+	padding: 5px;
+}
+.content img:hover{
+	/*z-index: 10px;*/
+	box-shadow: 13px 12px 15px -5px rgba(0,0,0,.3);
+}
+.brand{
+	background-color: #f1f1f130;
+	text-shadow: 1px 1px 1px #3F51B5;
+}

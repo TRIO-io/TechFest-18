@@ -17,9 +17,12 @@
 </head>
 <body>
 	<nav class="trans">
-		<a href="#second-block">Events</a>
-		<a href="#third-block">Contact Us</a>
-		<a href="#">About Us</a>
+		<a href="#second-block">About Us</a>
+		<a href="#third-block">Events</a>
+		<a href="#first-block" class="brand">TechFest'18</a>
+		<a href="#fourth-block">Sponsers</a>
+		<a href="#fifth-block">Contact Us</a>
+
 	</nav>
 	<div class="container container-main" id="first-block">
 		<div class="main">
@@ -28,7 +31,28 @@
 			<a class="gs-btn" href="https://codepen.io/giana/pen/BZaGyP?q=shadow&order=popularity&depth=everything&show_forks=false">Get Started <i class="fas fa-angle-right move"></i></a>
 		</div>
 	</div>
-	<div class="container container-main" id="second-block">
+	<div style="width: 100%; background: white;">
+		<div class="container container-main" id="second-block">
+			<div class="main">
+				<span class="main-span" >About</span>
+
+				<span class="content">
+					Technical Expo focuses
+					on various technical events
+					like project exhibition, coding
+					Tech paper presentation in the<br>
+					area of Computer Science &
+					Technology. It will provide a forum
+					to students for sharing their innovations.
+					Tech Expo will create a bridge between
+					students and industry. This event will be a
+					landmark in the refining learning of technocrats.
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container container-main" id="third-block">
 		<div class="main">
 			<span class="main-span">Events</span>
 			<div class="row" style="margin-top: 3rem;">
@@ -91,16 +115,53 @@
 			</div>
 		</div>
 	</div>
-	<div class="container container-main" id="third-block">
-		<div class="main">
-			<span class="main-span">Contact Us</span>
-			<div class="row" style="margin-top: 5rem;">
-				<div class="col s12 m12">
-					<div class="card-panel teal">
-						<span class="white-text" style="font-size: 1.3em;">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique esse iste voluptatem iusto exercitationem fugit ipsa, dicta hic soluta sint dolore aliquam, quibusdam consectetur culpa. Mollitia recusandae quam dolores, beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint neque, quam id amet eius sapiente iste reiciendis. Dolores, sit nam officia et deleniti, doloremque a error laboriosam totam hic esse! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ab id, porro sunt dolores eveniet ad consequatur maxime tempora qui voluptatem eaque odit neque, quod numquam dolor quis at in.
-						</span>
+	<div style="width: 100%; background: white;">
+		<div class="container container-main" id="fourth-block">
+			<div class="main">
+				<span class="main-span" >Sponsers</span>
+				<div class="content">
+					<img src="images/issac logo.jpg">
+					<img src="images/INCUBRO.png">
+					<img src="images/kodding logo.png">
+					<img src="images/brain_mentors_logo.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%;">
+		<div class="container container-main" id="fifth-block">
+			<div class="main">
+
+				<!-- <div class="row" style="margin-top: 5rem;">
+					<div class="col s12 m12">
+						<div class="card-panel teal">
+							<span class="white-text" style="font-size: 1.3em;">
+								coordinator<br>
+								Email : abc@gmail.com<br>
+								Contact No : 646+5+59+59+<br>
+
+							</span>
+						</div>
 					</div>
+				</div> -->
+				<div class="card-panel con">
+					<span class="main-span">Contact Us</span><br>
+					<span class="white-text content">
+						<table>
+							<tr>
+								<td><i class="fas fa-map-marker-alt"></i></td>
+								<td>Plot No. 326,<br>   Hamidpur <br>  Delhi-110036</td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-phone"></i></td>
+								<td>9868238718<br>9864565852</td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-envelope"></i></td>
+								<td>abc@gmail.com</td>
+							</tr>
+						</table>
+					</span>
 				</div>
 			</div>
 		</div>
@@ -136,8 +197,30 @@
 		</div>
 	</footer>
 
+
+<!-- g MAP -->
+
+<!--     <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+ -->
+ <!-- g map end -->
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
@@ -157,7 +240,7 @@
 		      $('html, body').animate({
 		      	scrollTop: $(hash).offset().top
 		      }, 800, function(){
-		      	
+
 		        // Add hash (#) to URL when done scrolling (default click behavior)
 		        window.location.hash = hash;
 		    });
