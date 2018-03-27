@@ -31,6 +31,8 @@ body {
 
 #first-block {
 	padding-top: 60px;
+	/*background-image: url('images/sample.jpg');
+	background-attachment: fixed;*/
 }
 
 .card {

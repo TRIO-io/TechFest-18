@@ -4,24 +4,36 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-image"
+			],
+			[
+				"text",
+				"text-shadow"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
 				"tras",
 				"transition"
 			],
 			[
 				"font-",
 				"font-size"
-			],
-			[
-				"pad",
-				"padding-left"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"w",
@@ -58,10 +70,6 @@
 			[
 				"c",
 				"color"
-			],
-			[
-				"hei",
-				"height"
 			],
 			[
 				"wid",
@@ -335,7 +343,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6134,
+				"buffer_size": 7260,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.css",
+			"settings":
+			{
+				"buffer_size": 2262,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -565,7 +582,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 78.0
 	},
 	"find_in_files":
 	{
@@ -596,7 +613,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -605,15 +622,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6134,
+						"buffer_size": 7260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								535,
-								535
+								4337,
+								4337
 							]
 						],
 						"settings":
@@ -622,7 +639,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 269.0,
+						"translation.y": 2667.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								475,
+								475
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/CSS (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 601.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -633,7 +679,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 39.0
 	},
 	"input":
 	{
@@ -674,7 +720,7 @@
 	"project": "techfest18.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 74.0
 	},
 	"save_all_on_build": true,
 	"select_file":
