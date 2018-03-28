@@ -11,28 +11,106 @@ body {
 	background-attachment: fixed;
 }
 
-.trans {
+#nav {
 	text-align: center;
-	overflow: hidden;
-	z-index: 99;
-	text-shadow: 0 1px 1px #323232;
-	background-color: #009688;
 	position: fixed;
+	width: 100%;
 }
 
-.trans a {
-	font-size: 1.1em;
-	padding: 1.6rem;
+.left-link, .right-link, .middle-link {
+	color: #fff;
 }
 
-.trans a:hover {
-	background-color: #ffffff30;
+.middle-link .text {
+	background-color: #323232;
+	width: 160px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: -30px;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: all .2s;
+}
+
+.middle-link:hover .text {
+	height: 55px;
+	border-radius: 0 0 6px 6px;
+}
+
+.left-link .text {
+	background-color: #555;
+	width: 130px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: -25px;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: all .2s;
+}
+
+.left-link .tri {
+	display: inline-block;
+	width: 0;
+	margin-top: -4px;
+	vertical-align: middle;
+	margin-left: -25px;
+	height: 0;
+	border-top: 25px solid #555;
+	border-left: 25px solid #555;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	transition: all .2s;
+}
+
+.left-link:hover .tri {
+	border-top: 25px solid #323232;
+	border-left: 25px solid #323232;
+}
+
+.left-link:hover .text {
+	background-color: #323232;
+	height: 55px;
+	border-radius: 0 0 6px 6px;
+}
+
+.right-link .text {
+	background-color: #555;
+	width: 130px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: -25px;
+	display: inline-block;
+	box-sizing: border-box;
+	transition: all .2s;
+}
+
+.right-link .tri {
+	display: inline-block;
+	width: 0;
+	margin-top: -4px;
+	margin-left: -25px;
+	vertical-align: middle;
+	height: 0;
+	border-top: 25px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid #555;
+	border-bottom: 25px solid transparent;
+	transition: all .2s;
+}
+
+.right-link:hover .tri {
+	border-top: 25px solid #323232;
+	border-right: 25px solid #323232;
+}
+
+.right-link:hover .text {
+	background-color: #323232;
+	height: 55px;
+	border-radius: 0 0 6px 6px;
 }
 
 #first-block {
 	padding-top: 60px;
-	/*background-image: url('images/sample.jpg');
-	background-attachment: fixed;*/
 }
 
 .card {
@@ -72,7 +150,7 @@ body {
 	margin-top: 8rem;
 	padding: 1rem 2rem;
 	display: inline-block;
-	border: 0.5rem solid #FFC107;
+	/*border: 0.5rem solid #FFC107;*/
 	text-shadow: 2px 2px 2px #3F51B5;
 }
 
@@ -188,4 +266,108 @@ body {
 .brand{
 	background-color: #f1f1f130;
 	text-shadow: 1px 1px 1px #3F51B5;
+}
+
+
+/* Navigation styles */
+
+/* Style 01 */
+
+.navigation1 {
+	margin-top: 100px;
+	width: 250px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 1rem 1rem 1rem 0;
+}
+
+.navigation1 a {
+	height: 0;
+	width: 160px;
+	display: block;
+	line-height: 50px;
+	padding-left: 1rem;
+	color: #fff;
+	transition: all .2s;
+	border-right: 30px solid #fff;
+	border-bottom: 50px solid #666;
+}
+
+.navigation1 a:hover {
+	line-height: auto;
+	width: 130px;
+	border-bottom: 50px solid #323232;
+}
+
+/* Style 02 */
+
+.navigation2 {
+	margin-top: 100px;
+	width: 250px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 1rem 1rem 1rem 0;
+}
+
+.navigation2 a {
+	height: 0;
+	width: 130px;
+	display: block;
+	line-height: 50px;
+	padding-left: 1rem;
+	color: #fff;
+	transition: all .2s;
+	border-right: 30px solid #fff;
+	border-bottom: 50px solid #666;
+}
+
+.navigation2 a:hover {
+	line-height: auto;
+	width: 160px;
+	border-bottom: 50px solid #323232;
+}
+
+/* Style 03 */
+
+.navigation3 {
+	margin-top: 100px;
+	width: 250px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 1rem 1rem 1rem 0;
+}
+
+.navigation3 a .span1 {
+	height: 50px;
+	width: 130px;
+	color: #fff;
+	display: inline-block;
+	line-height: 48px;
+	background-color: #666;
+	transition: all .2s;
+	padding-left: 1rem;
+}
+
+.navigation3 a:hover .span1 {
+	background-color: #323232;
+}
+
+.navigation3 a .span2 {
+	width: 0;
+	line-height: 50px;
+	height: 0;
+	vertical-align: middle;
+	display: inline-block;
+	border-right: 25px solid #fff;
+	border-top: 25px solid #666;
+	border-left: 25px solid #666;
+	border-bottom: 25px solid #fff;
+	transition: all .2s;
+}
+
+.navigation3 a:hover .span2 {
+	border-right: 25px solid #fff;
+	border-top: 25px solid #fff;
+	border-left: 25px solid #323232;
+	border-bottom: 25px solid #323232;
 }

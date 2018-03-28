@@ -3,39 +3,36 @@
 <head>
 	<title>TechFest'18</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="main.css">
 
 </head>
 <body>
-	<nav class="trans">
-		<a href="#second-block">About Us</a>
-		<a href="#third-block">Events</a>
-		<a href="#first-block" class="brand">TechFest'18</a>
-		<a href="#fourth-block">Sponsers</a>
-		<a href="#fifth-block">Contact Us</a>
-
-	</nav>
+	<div id="nav">
+		<a class="left-link" href="#second-block" style="z-index: 1; position: relative;"><span class="text">About Us</span><span class="tri"></span></a><a class="left-link" href="#" style="z-index: 0; position: relative;"><span class="text">Events</span><span class="tri"></span></a>
+		<a href="#" class="middle-link"><span class="text">Tech Fest '18</span></a><a class="right-link" href="#"><span class="tri"></span><span class="text">Sponsors</span></a><a class="right-link" href="#"><span class="tri"></span><span class="text">Contact Us</span></a>
+	</div>
 	<div class="container container-main" id="first-block">
 		<div class="main">
-			<span class="main-span" style="margin-top: 7rem; font-size: 10em;">Tech Fest '18</span>
+			<span class="main-span" style="margin-top: 3rem; font-size: 10em;">Tech Fest '18</span>
+			<span style="margin-top: 2rem; font-size: 3em; color: #fff; text-shadow: 0 0 3px #323232;">Innovate together</span>
 			<br><br><br><br><br><br><br><br><br>
-			<a class="gs-btn" href="https://codepen.io/giana/pen/BZaGyP?q=shadow&order=popularity&depth=everything&show_forks=false">Get Started <i class="fas fa-angle-right move"></i></a>
+			<a class="gs-btn" href="#">Get Started <i class="fas fa-angle-right move"></i></a>
 		</div>
 	</div>
 	<div style="width: 100%; background: white;">
 		<div class="container container-main" id="second-block">
 			<div class="main">
 				<span class="main-span" >About</span>
-
 				<span class="content">
 					Technical Expo focuses
 					on various technical events
@@ -54,65 +51,25 @@
 
 	<div class="container container-main" id="third-block">
 		<div class="main">
-			<span class="main-span">Events</span>
-			<div class="row" style="margin-top: 3rem;">
-				<div class="col s3 m3">
-					<div class="card medium">
-						<div class="card-image">
-							<img src="images/sample.jpg">
-							<span class="card-title">Project Exhibition</span>
-						</div>
-						<div class="card-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum minima vero itaque veritatis eligendi deleniti odio atque maiores ut quibusdam repudiandae voluptate repellendus, hic sint omnis quae, possimus ex laborum!</p>
-						</div>
-						<div class="card-action">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s3 m3">
-					<div class="card medium">
-						<div class="card-image">
-							<img src="images/sample.jpg">
-							<span class="card-title">Coding Competition</span>
-						</div>
-						<div class="card-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum minima vero itaque veritatis eligendi deleniti odio atque maiores ut quibusdam repudiandae voluptate repellendus, hic sint omnis quae, possimus ex laborum!</p>
-						</div>
-						<div class="card-action">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s3 m3">
-					<div class="card medium">
-						<div class="card-image">
-							<img src="images/sample.jpg">
-							<span class="card-title">Tech Paper Presentation</span>
-						</div>
-						<div class="card-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cum veritatis at! Veniam labore quisquam cumque corrupti laborum vel voluptates hic quas explicabo inventore excepturi, optio doloribus quia animi ipsum?</p>
-						</div>
-						<div class="card-action">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s3 m3">
-					<div class="card medium">
-						<div class="card-image">
-							<img src="images/sample.jpg">
-							<span class="card-title">Technical Quiz</span>
-						</div>
-						<div class="card-content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magnam aliquid, pariatur laborum fugit totam voluptate quod repudiandae doloribus placeat officiis, nam esse dolor quos adipisci optio ipsum explicabo tenetur.</p>
-						</div>
-						<div class="card-action">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			<span class="main-span" style="margin-bottom: 5rem;">Events</span>
+			<ul class="collapsible collapsible-accordion">
+				<li>
+					<div class="collapsible-header"><i class="fas fa-pencil-alt"></i>Project Competition/Exhibition</div>
+					<div class="collapsible-body"><span></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="far fa-question-circle"></i>Tech Quiz</div>
+					<div class="collapsible-body"><span></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="fas fa-code"></i> Coding</div>
+					<div class="collapsible-body"><span></span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="far fa-file-alt"></i> Tech. Paper Presentation</div>
+					<div class="collapsible-body"><span></span></div>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<div style="width: 100%; background: white;">
@@ -131,19 +88,6 @@
 	<div style="width: 100%;">
 		<div class="container container-main" id="fifth-block">
 			<div class="main">
-
-				<!-- <div class="row" style="margin-top: 5rem;">
-					<div class="col s12 m12">
-						<div class="card-panel teal">
-							<span class="white-text" style="font-size: 1.3em;">
-								coordinator<br>
-								Email : abc@gmail.com<br>
-								Contact No : 646+5+59+59+<br>
-
-							</span>
-						</div>
-					</div>
-				</div> -->
 				<div class="card-panel con">
 					<span class="main-span">Contact Us</span><br>
 					<span class="white-text content">
@@ -189,66 +133,53 @@
 			<div class="container">
 				© 2018 Copyright HMRITM
 				<div style="float: right;">
-					<a href="#" class="social facebook_link fab fa-facebook"></a>
-					<a href="#" class="social youtube_link fab fa-youtube"></a>
-					<a href="#" class="social insta_link fab fa-instagram"></a>
+					<a href="https://www.facebook.com/hmritm/" class="social facebook_link fab fa-facebook"></a>
+					<a href="https://www.youtube.com/channel/UCwZmKc3aB3iIqfU5dUsW0eg" class="social youtube_link fab fa-youtube"></a>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 
-<!-- g MAP -->
+	<!-- g MAP -->
 
 <!--     <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
- -->
- <!-- g map end -->
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		  // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
-		  	console.log('Hackti');
-		    // Make sure this.hash has a value before overriding default behavior
-		    if (this.hash !== "") {
-		      // Prevent default anchor click behavior
-		      event.preventDefault();
-
-		      // Store hash
-		      var hash = this.hash;
-
-		      // Using jQuery's animate() method to add smooth page scroll
-		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		      $('html, body').animate({
-		      	scrollTop: $(hash).offset().top
-		      }, 800, function(){
-
-		        // Add hash (#) to URL when done scrolling (default click behavior)
-		        window.location.hash = hash;
-		    });
-		    } // End if
+	  function initMap() {
+		var uluru = {lat: -25.363, lng: 131.044};
+		var map = new google.maps.Map(document.getElementById('map'), {
+		  zoom: 4,
+		  center: uluru
 		});
+		var marker = new google.maps.Marker({
+		  position: uluru,
+		  map: map
 		});
+	  }
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+	</script>
+-->
+<!-- g map end -->
+<script>
+
+var elem = document.querySelector('.collapsible');
+var instance = M.Collapsible.init(elem, 'show');
+
+$(document).ready(function(){
+	$("a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+			});
+		}
+	});
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 </html>
