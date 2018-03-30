@@ -5,10 +5,20 @@ body, html {
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	background: url("images/back.jpg");
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+table tr {
+	border-bottom: none;
+}
+
+table td {
+	text-align: center;
+	padding: 0;
 }
 
 #nav {
@@ -17,13 +27,27 @@ body {
 	width: 100%;
 }
 
+#particles-js {
+	position: absolute;
+	z-index: 0;
+	width: 100vw;
+	background: #0b1750;
+	height: 100vh;
+}
+
 .left-link, .right-link, .middle-link {
 	color: #fff;
 }
 
+.collapsible-body {
+	background-color: #ECEFF1;
+	padding: 1rem;
+}
+
 .middle-link .text {
-	background-color: #323232;
-	width: 160px;
+	background-color: #fff;
+	color: #323232;
+	width: 200px;
 	height: 50px;
 	line-height: 50px;
 	margin-left: -30px;
@@ -34,12 +58,15 @@ body {
 
 .middle-link:hover .text {
 	height: 55px;
+	background-color: #FF6F00;
+	color: #fff;
 	border-radius: 0 0 6px 6px;
 }
 
 .left-link .text {
-	background-color: #555;
-	width: 130px;
+	background-color: #fff;
+	color: #323232;
+	width: 160px;
 	height: 50px;
 	line-height: 50px;
 	margin-left: -25px;
@@ -55,27 +82,29 @@ body {
 	vertical-align: middle;
 	margin-left: -25px;
 	height: 0;
-	border-top: 25px solid #555;
-	border-left: 25px solid #555;
+	border-top: 25px solid #fff;
+	border-left: 25px solid #fff;
 	border-right: 25px solid transparent;
 	border-bottom: 25px solid transparent;
 	transition: all .2s;
 }
 
 .left-link:hover .tri {
-	border-top: 25px solid #323232;
-	border-left: 25px solid #323232;
+	border-top: 25px solid #FF6F00;
+	border-left: 25px solid #FF6F00;
 }
 
 .left-link:hover .text {
-	background-color: #323232;
+	color: #fff;
+	background-color: #FF6F00;
 	height: 55px;
 	border-radius: 0 0 6px 6px;
 }
 
 .right-link .text {
-	background-color: #555;
-	width: 130px;
+	background-color: #fff;
+	color: #323232;
+	width: 160px;
 	height: 50px;
 	line-height: 50px;
 	margin-left: -25px;
@@ -91,20 +120,21 @@ body {
 	margin-left: -25px;
 	vertical-align: middle;
 	height: 0;
-	border-top: 25px solid #555;
+	border-top: 25px solid #fff;
 	border-left: 25px solid transparent;
-	border-right: 25px solid #555;
+	border-right: 25px solid #fff;
 	border-bottom: 25px solid transparent;
 	transition: all .2s;
 }
 
 .right-link:hover .tri {
-	border-top: 25px solid #323232;
-	border-right: 25px solid #323232;
+	border-top: 25px solid #FF6F00;
+	border-right: 25px solid #FF6F00;
 }
 
 .right-link:hover .text {
-	background-color: #323232;
+	color: #fff;
+	background-color: #FF6F00;
 	height: 55px;
 	border-radius: 0 0 6px 6px;
 }
@@ -150,8 +180,7 @@ body {
 	margin-top: 8rem;
 	padding: 1rem 2rem;
 	display: inline-block;
-	/*border: 0.5rem solid #FFC107;*/
-	text-shadow: 2px 2px 2px #3F51B5;
+	text-shadow: 2px 2px 2px #ff0033
 }
 
 .main-span-side {
@@ -168,26 +197,40 @@ body {
 	margin: 2rem auto;
 	display: block;
 	width: 250px;
-	border: 4px solid #323232;
-	color: #323232;
+	border: 4px solid #fff;
+	color: #fff;
 	transition: all .2s;
-	background-color: #f1f1f150;
 }
 
 .gs-btn:hover {
 	text-decoration: none;
 	border-color: #FF6F00;
-	background-color: #f1f1f180;
 	color: #FF6F00;
+}
+
+.gs-btn:hover .move {
+	padding-left: 2rem;
+}
+
+.dwnld-btn {
+	font: 1.5rem "Roboto", sans-serif;
+	margin: 1rem;
+	display: block;
+	padding: 1rem;
+	background-color: rgb(255, 255, 255, 0.5);
+	border: 2px solid #448AFF;
+}
+
+.dwnld-btn:hover {
+	color: #FF6F00;
+	text-decoration: none;
+	border-color: #FF6F00;
+	background-color: rgb(255, 243, 224, 0.8);
 }
 
 .move {
 	padding-left: 1rem;
 	transition: all .2s;
-}
-
-.gs-btn:hover .move {
-	padding-left: 2rem;
 }
 
 .page-footer {
@@ -232,16 +275,9 @@ body {
 	text-align: center;
 	margin-top: 8rem;
 	background: transparent;
-	text-shadow: 1px 1px 1px #323232;
 	padding-bottom: 3rem;
 }
-.con .main-span {
-	margin-top: 1rem;
-	padding: 1rem 2rem;
-	display: inline-block;
-	border: 0.5rem solid #FFC107;
-	text-shadow: 2px 2px 2px #3F51B5;
-}
+
 .con .content{
 	display: block;
 	text-align: left;
@@ -249,20 +285,15 @@ body {
 	font-size: 1.6em;
 	letter-spacing: 0.3rem;
 }
+
 .main .content{
 	display: block;
-	text-align: center;
+	text-align: left;
 	margin-top: 4rem;
 	font-size: 1.6em;
 	letter-spacing: 0.3rem;
 }
-.content img{
-	padding: 5px;
-}
-.content img:hover{
-	/*z-index: 10px;*/
-	box-shadow: 13px 12px 15px -5px rgba(0,0,0,.3);
-}
+
 .brand{
 	background-color: #f1f1f130;
 	text-shadow: 1px 1px 1px #3F51B5;

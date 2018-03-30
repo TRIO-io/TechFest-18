@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TechFest'18</title>
+	<title>TechExpo'18</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,23 +17,30 @@
 
 </head>
 <body>
+	<div id="particles-js">
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+	particlesJS.load('particles-js', 'assets/particles.json', function() {
+		console.log('callback - particles.js config loaded');
+	});
+	</script>
 	<div id="nav">
-		<a class="left-link" href="#second-block" style="z-index: 1; position: relative;"><span class="text">About Us</span><span class="tri"></span></a><a class="left-link" href="#" style="z-index: 0; position: relative;"><span class="text">Events</span><span class="tri"></span></a>
-		<a href="#" class="middle-link"><span class="text">Tech Fest '18</span></a><a class="right-link" href="#"><span class="tri"></span><span class="text">Sponsors</span></a><a class="right-link" href="#"><span class="tri"></span><span class="text">Contact Us</span></a>
+		<a class="left-link" href="#second-block" style="z-index: 1; position: relative;"><span class="text">About Us</span><span class="tri"></span></a><a class="left-link" href="#third-block" style="z-index: 0; position: relative;"><span class="text">Events</span><span class="tri"></span></a>
+		<a href="#" class="middle-link"><span class="text">Tech Expo '18</span></a><a class="right-link" href="#fourth-block"><span class="tri"></span><span class="text">Sponsors</span></a><a class="right-link" href="#fifth-block"><span class="tri"></span><span class="text">Contact Us</span></a>
 	</div>
 	<div class="container container-main" id="first-block">
 		<div class="main">
-			<span class="main-span" style="margin-top: 3rem; font-size: 10em;">Tech Fest '18</span>
-			<span style="margin-top: 2rem; font-size: 3em; color: #fff; text-shadow: 0 0 3px #323232;">Innovate together</span>
-			<br><br><br><br><br><br><br><br><br>
-			<a class="gs-btn" href="#">Get Started <i class="fas fa-angle-right move"></i></a>
+			<span class="main-span" style="margin-top: 3rem; font-size: 9em; z-index: 99; position: relative; user-select: none;">Tech Expo '18</span>
+			<span style="margin-top: 2rem; font-size: 3em; color: #fff; text-shadow: 0 0 3px #323232; margin-bottom: 8rem; display: inline-block; z-index: 99; position: relative;">Innovate together</span>
+			<a class="gs-btn" target="_blank" href="./assets/reg_form_techfest_2018.docx"style="z-index: 99; position: relative;">Get Started <i class="fas fa-angle-right move"></i></a>
 		</div>
 	</div>
-	<div style="width: 100%; background: white;">
+	<div style="width: 100%;">
 		<div class="container container-main" id="second-block">
 			<div class="main">
 				<span class="main-span" >About</span>
-				<span class="content">
+				<span class="content" style="background-color: #f1f1f180; padding: 2rem; border-radius: 1rem;">
 					Technical Expo focuses
 					on various technical events
 					like project exhibition, coding
@@ -48,39 +55,169 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="container container-main" id="third-block">
 		<div class="main">
 			<span class="main-span" style="margin-bottom: 5rem;">Events</span>
+			<h6 style="margin: -2rem 0 0 0; color: #323232; padding-bottom: 1rem;">Click on an event to know more</h6>
 			<ul class="collapsible collapsible-accordion">
 				<li>
-					<div class="collapsible-header"><i class="fas fa-pencil-alt"></i>Project Competition/Exhibition</div>
-					<div class="collapsible-body"><span></span></div>
+					<div class="collapsible-header"><i class="fas fa-chart-pie"></i>Project Competition/Exhibition
+						<i class="fas fa-angle-right" style="color: #448AFF; width: auto; text-align: right; margin-left: auto;"></i>
+					</div>
+					<div class="collapsible-body">
+						<h5>Coordinators:</h5>
+						<div class="row">
+							<div class="col s4">
+								Mr. Ravi Arora<br>(9810527748)
+							</div>
+							<div class="col s4">
+								Mansha Lamba [CSE 4A]<br>(9999776326)
+							</div>
+							<div class="col s4">
+								Sahil gupta [CSE 4A]<br>(9811251889)
+							</div>
+						</div>
+						<hr>
+						<h5>Department Faculty:</h5>
+						<table>
+							<tr>
+								<td>CSE</td>
+								<td>ECE</td>
+								<td>IT</td>
+								<td>EEE</td>
+								<td>MAE</td>
+							</tr>
+							<tr>
+								<td>Ms Isha Aggarwal<br>(9899424623)</td>
+								<td>Ms Sameena<br>(9268793262)</td>
+								<td>Ms Archana<br>(7985433837)</td>
+								<td>Mr Vikas<br>(7011521166)</td>
+								<td>Mr Sumit Jain<br>(9896272770)</td>
+							</tr>
+						</table>
+					</div>
 				</li>
 				<li>
-					<div class="collapsible-header"><i class="far fa-question-circle"></i>Tech Quiz</div>
-					<div class="collapsible-body"><span></span></div>
+					<div class="collapsible-header"><i class="far fa-question-circle"></i>Tech Quiz
+						<i class="fas fa-angle-right" style="color: #448AFF; width: auto; text-align: right; margin-left: auto;"></i>
+					</div>
+					<div class="collapsible-body">
+						<h5>Coordinators:</h5>
+						<div class="row">
+							<div class="col s4">
+								Ms. Ritika Sethi<br>(9953859884)
+							</div>
+							<div class="col s4">
+								Ayushi Vats [CSE 6E]<br>(9711398019)
+							</div>
+							<div class="col s4">
+								Yash Bansal [CSE 6E]<br>(9068906841)
+							</div>
+						</div>
+						<hr>
+						<h5>Department Faculty:</h5>
+						<table>
+							<tr>
+								<td>CSE</td>
+								<td>ECE</td>
+								<td>IT</td>
+								<td>EEE</td>
+								<td>MAE</td>
+							</tr>
+							<tr>
+								<td>Ms Sakshi<br>(989674655)</td>
+								<td>Mr Pawan<br>(9990170563)</td>
+								<td>Ms Samrity<br>(8585978019)</td>
+								<td>Ms Neeraj<br>(8527127185)</td>
+								<td>Ms Yashika<br>(9891430676)</td>
+							</tr>
+						</table>
+					</div>
 				</li>
 				<li>
-					<div class="collapsible-header"><i class="fas fa-code"></i> Coding</div>
-					<div class="collapsible-body"><span></span></div>
+					<div class="collapsible-header"><i class="fas fa-code"></i> Coding
+						<i class="fas fa-angle-right" style="color: #448AFF; width: auto; text-align: right; margin-left: auto;"></i>
+					</div>
+					<div class="collapsible-body">
+						<h5>Coordinators:</h5>
+						<div class="row">
+							<div class="col s4">
+								Ms Lakshmi Singh<br>(9540075553)
+							</div>
+							<div class="col s4">
+								Jaskirat [CSE 4B]<br>(9873980567)
+							</div>
+							<div class="col s4">
+								Pulkit [CSE 4B]<br>(9643025648)
+							</div>
+						</div>
+						<hr>
+						<h5>Department Faculty:</h5>
+						<table>
+							<tr>
+								<td>CSE</td>
+								<td>IT</td>
+							</tr>
+							<tr>
+								<td>Mr. Mandeep Singh<br>(9711204482)</td>
+								<td>Mr Atul Kumar<br>(9599558094)</td>
+							</tr>
+						</table>
+					</div>
 				</li>
 				<li>
-					<div class="collapsible-header"><i class="far fa-file-alt"></i> Tech. Paper Presentation</div>
-					<div class="collapsible-body"><span></span></div>
+					<div class="collapsible-header"><i class="far fa-file-alt"></i>Tech. Paper Presentation
+						<i class="fas fa-angle-right" style="color: #448AFF; width: auto; text-align: right; margin-left: auto;"></i>
+					</div>
+					<div class="collapsible-body">
+						<h5>Coordinator:</h5>
+						<div class="row">
+							<div class="col s12">
+								Mr. Bharat Bhushan<br>(9958973930)
+							</div>
+						</div>
+						<hr>
+						<h5>Department Faculty:</h5>
+						<table>
+							<tr>
+								<td>CSE</td>
+								<td>ECE</td>
+								<td>IT</td>
+								<td>EEE</td>
+								<td>MAE</td>
+							</tr>
+							<tr>
+								<td>Mr Vidushi<br>(9136008276)</td>
+								<td>Mr Brijesh<br>(9911507658)</td>
+								<td>Mr D.K. Mishra<br>(9350581449)</td>
+								<td>Md. Ehsan Asgar<br>(9999629550)</td>
+								<td>Mr. Mannu Ahuja<br>(9711754344)</td>
+							</tr>
+						</table>
+					</div>
 				</li>
 			</ul>
+			<table>
+				<tr>
+					<td>
+						<a class="dwnld-btn" target="_blank" href="./assets/reg_form_techfest_2018.docx"style="z-index: 99; position: relative;">Download Registration Form<i class="fas fa-angle-right move"></i></a>
+					</td>
+					<td>
+						<a class="dwnld-btn" target="_blank" href="./assets/reg_slip_techfest_2018.docx"style="z-index: 99; position: relative;">Download Registration Slip<i class="fas fa-angle-right move"></i></a>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</div>
-	<div style="width: 100%; background: white;">
+	<div style="width: 100%;">
 		<div class="container container-main" id="fourth-block">
 			<div class="main">
-				<span class="main-span" >Sponsers</span>
-				<div class="content">
-					<img src="images/issac logo.jpg">
-					<img src="images/INCUBRO.png">
-					<img src="images/kodding logo.png">
-					<img src="images/brain_mentors_logo.png">
+				<span class="main-span" >Sponsors</span>
+				<div class="content" style="margin: 2rem auto;">
+					<img src="images/issac_logo.jpg" style="display: block; margin: 1rem auto;">
+					<img src="images/incubro_logo.png" style="display: block; margin: 1rem auto;">
+					<img src="images/kodding_logo.png" style="display: block; margin: 1rem auto;">
+					<img src="images/brain_mentors_logo.png" style="display: block; margin: 1rem auto;">
 				</div>
 			</div>
 		</div>
@@ -88,21 +225,21 @@
 	<div style="width: 100%;">
 		<div class="container container-main" id="fifth-block">
 			<div class="main">
-				<div class="card-panel con">
-					<span class="main-span">Contact Us</span><br>
-					<span class="white-text content">
+				<div class="card-panel con" style="background-color: rgb(255, 255, 255, 0.4);">
+					<span class="main-span" style="margin-top: 2rem;">Contact Us</span>
+					<span class="content" style="color: #323232;">
 						<table>
 							<tr>
-								<td><i class="fas fa-map-marker-alt"></i></td>
-								<td>Plot No. 326,<br>   Hamidpur <br>  Delhi-110036</td>
+								<td style="padding-bottom: 2rem;"><i class="fas fa-map-marker-alt"></i></td>
+								<td style="text-align: left; padding-left: 2rem; padding-bottom: 2rem;">Plot No. 326,<br>Hamidpur<br>Delhi-110036</td>
 							</tr>
 							<tr>
-								<td><i class="fas fa-phone"></i></td>
-								<td>9868238718<br>9864565852</td>
+								<td style="padding-bottom: 2rem;"><i class="fas fa-phone"></i></td>
+								<td style="text-align: left; padding-left: 2rem; padding-bottom: 2rem;">9868238718<br>9864565852</td>
 							</tr>
 							<tr>
-								<td><i class="fas fa-envelope"></i></td>
-								<td>abc@gmail.com</td>
+								<td style="padding-bottom: 2rem;"><i class="fas fa-envelope"></i></td>
+								<td style="text-align: left; padding-left: 2rem; padding-bottom: 2rem;">info@hmritm.ac.in</td>
 							</tr>
 						</table>
 					</span>
@@ -115,16 +252,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-					<h5 class="white-text">Tech Fest '18</h5>
-					<p class="grey-text text-lighten-4">Tech fest in an annual event that happens in HMRITM.</p>
+					<h5 class="white-text">Tech Expo '18</h5>
+					<p class="grey-text text-lighten-4">Innovate together</p>
 				</div>
 				<div class="col l4 offset-l2 s12">
-					<h6 class="white-text">Quick Links</h6>
+					<h5 class="white-text">Quick Links</h5>
 					<ul>
-						<li><a class="flink" href="#">About</a></li>
-						<li><a class="flink" href="#">Events</a></li>
-						<li><a class="flink" href="#">Coordinators</a></li>
-						<li><a class="flink" href="#">Contact Us</a></li>
+						<li><a class="flink" href="#second-block">About Us</a></li>
+						<li><a class="flink" href="#third-block">Events</a></li>
+						<li><a class="flink" href="#fourth-block">Sponsors</a></li>
+						<li><a class="flink" href="#fifth-block">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -139,47 +276,24 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+	var elem = document.querySelector('.collapsible');
+	var instance = M.Collapsible.init(elem, 'show');
 
-
-	<!-- g MAP -->
-
-<!--     <script>
-	  function initMap() {
-		var uluru = {lat: -25.363, lng: 131.044};
-		var map = new google.maps.Map(document.getElementById('map'), {
-		  zoom: 4,
-		  center: uluru
+	$(document).ready(function(){
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					window.location.hash = hash;
+				});
+			}
 		});
-		var marker = new google.maps.Marker({
-		  position: uluru,
-		  map: map
-		});
-	  }
-	</script>
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-	</script>
--->
-<!-- g map end -->
-<script>
-
-var elem = document.querySelector('.collapsible');
-var instance = M.Collapsible.init(elem, 'show');
-
-$(document).ready(function(){
-	$("a").on('click', function(event) {
-		if (this.hash !== "") {
-			event.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
-				window.location.hash = hash;
-			});
-		}
 	});
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 </html>
